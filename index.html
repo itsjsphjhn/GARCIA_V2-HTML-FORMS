@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Form</title>
+<link rel="stylesheet" href="style.css"/>
+<style type="text/css">
+    body{
+        background-image: url(g:\My Drive\Acer Laptop\GARCIA_V2-HTML-FORMS\adbg.jpg);
+    }
+</style>
+</head>
+<body>
+<form id="orderForm">
+    <header>
+        <img src="adlogo.png" class="logo">
+        <h1>Adolfoz Kusina</h1>
+      <p>
+        <em>Craving for other countries cuisine? Fill out this form. </em>
+    </p>
+    </header>
+    <h3>AK's Order form</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <body>
+        <div id="dropdown">
+            <button class="dropdown-toggle"
+            type="button"></button>
+                <span>Menu</span>
+                <i class="fa-solid fa-caret-down"></i>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Italian</a></li>
+                <li class="menu-item"><a href="#">Chinese</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Healthy Options</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                        <li class="submenu-item"><a href="#">Vegan</a></li>
+                        <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Mexican</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Specials</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Canabis Infused</a></li>
+                        <li class="submenu-item"><a href="#">Exotic Meats</a></li>
+                        <li class="submenu-item"><a href="#">HUMAN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script src='script.js'></script>
+
+    <label for="payment">Mode of Payment:</label>
+    <input type="text" id="payment" name="payment" required><br>
+
+    <label for="dineIn">Dine-in/To Go:</label>
+    <input type="radio" id="dineIn" name="dineOption" value="Dine-in" required>
+    <label for="dineIn">Dine-in</label>
+    <input type="radio" id="toGo" name="dineOption" value="To Go" required>
+    <label for="toGo">To Go</label>
+
+    <label for="comments">Comments/Instructions:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+    <button type="submit" id="submitBtn">Order Placed</button>
+    <button type="button" id="cancelBtn">Cancel</button>
+</form>
+
+</body>
+</html>
